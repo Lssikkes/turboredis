@@ -1,8 +1,7 @@
 package = "turbo-redis"
 version = "1.0-1"
 source = {
-   url = "git://github.com/me/Lssikkes/turboredis",
-   tag = "1.0-1",
+   url = "git://github.com/Lssikkes/turboredis"
 }
 description = {
    summary = "turbo-redis",
@@ -16,17 +15,17 @@ dependencies = {
    "lua >= 5.1, < 5.4"
 }
 build = {
-   type = "builtin",
-   modules = {
-      turboredis = {
-        "turboredis.lua", 
-        "turboredis/command.lua",
-        "turboredis/commands.lua",
-        "turboredis/connection.lua",
-        "turboredis/pipeline.lua",
-        "turboredis/pubsub.lua",
-        "turboredis/resp.lua",
-        "turboredis/util.lua"
+   type = "none",
+   install = {
+      lua = {
+        ["turboredis"] = "turboredis.lua", 
+        ["turboredis.command"] = "turboredis/command.lua",
+        ["turboredis.commands"] = "turboredis/commands.lua",
+        ["turboredis.connection"] = "turboredis/connection.lua",
+        ["turboredis.pipeline"] = "turboredis/pipeline.lua",
+        ["turboredis.pubsub"] = "turboredis/pubsub.lua",
+        ["turboredis.resp"] = "turboredis/resp.lua",
+        ["turboredis.util"] = "turboredis/util.lua"
       }
    }
 }
