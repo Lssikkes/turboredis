@@ -1,5 +1,3 @@
-### UNMAINTAINED: No new development or fixes will be done on turboredis in the near future. I simply do not have the time. See the v0.1 branch for a semi-stable version.
-
 turboredis
 ===========
 
@@ -9,7 +7,6 @@ turboredis
 - Support for most Redis commands.
 - Pub/Sub support.
 - No dependencies other than Turbo and Redis.
-- Everything is in a single file.
 - Dual turbo.async.task/callback interface for all 'normal' commands
 
 ----------
